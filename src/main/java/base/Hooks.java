@@ -55,10 +55,11 @@ public class Hooks {
                 driver.get(url);//the variable url is declared above with the actual url
                 driver.manage().window().maximize();//this maximizes the page immediately the url is entered
 
-@AfterTest
-    public void tearDown(){
-        driver.quit();
+
 }
 
-
+    @AfterTest
+    public void tearDown() {
+        driver.quit();
+    }
 }
